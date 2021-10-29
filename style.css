@@ -1,0 +1,105 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+/* BLOCK */
+.col {
+    width: 25%;
+    height: 100px;
+    font-size: 40px;
+    text-align: center;
+    background-color: turquoise;
+    float: left;
+}
+
+.clm {
+    width: 25%;
+    height: 100px;
+    font-size: 40px;
+    text-align: center;
+    background-color: violet;
+    float: left;
+}
+
+.col:nth-child(2), .col:nth-child(4) {
+    background-color: aqua;
+}
+
+.clm:nth-child(2), .clm:nth-child(4) {
+    background-color: palevioletred;
+}
+
+@media screen and (max-width: 1000px) {
+    .col {
+        width: 50%;
+    }
+
+    .container {
+        width: 960px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .col {
+        width: 100%;
+        margin: auto;
+    }
+
+    .container {
+        max-width: 460px;
+        margin: auto;
+    }
+}
+
+/* MENU */
+.menu {
+    list-style-type: none;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu2 {
+    list-style-type: none;
+}
+
+.menu2 li {
+    float: right;
+}
+
+.menu a, .menu2 a {
+    text-decoration: none;
+    padding: 10px;
+    color:darkmagenta;
+}
+
+.menu a:hover, .menu2 a:hover {
+    color: black;
+    background-color: thistle;
+}
+
+.item {
+    float: left;
+}
+
+/* TUTUP FLOAT LEFT */
+.tajuk {
+    clear: both;
+    padding-top:  50px;
+}
+
+.mulabaru {
+    clear: both;
+    padding-top: 20px;
+}
